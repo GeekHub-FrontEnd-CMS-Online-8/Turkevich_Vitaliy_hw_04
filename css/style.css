@@ -233,7 +233,7 @@ section .wrap{
 }
 /*************clients**************/
 
-#latestWorks section{
+#latestWorks .wrap div{
     position: relative;
     width: 360px;
     height: 270px;
