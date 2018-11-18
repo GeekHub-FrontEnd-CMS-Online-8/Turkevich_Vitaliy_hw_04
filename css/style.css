@@ -1,77 +1,265 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
-body{
+/*font-weight:
+    Lato Light 300,
+    Lato Regular 400,
+    Lato Bold 700,
+    Lato Black 900,
+*/
+
+body {
     font-family: 'Lato', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
-
-h1{
+h2{
+    color: #3677fd;
+    font-weight: 300;
+    font-size: xx-large;
+}
+h3{
+    color: #3677fd;
+    font-weight: 700;
     text-transform: uppercase;
 }
-
-header{
-    padding: 100px 0 20px;
+p{
+    font-size: 17px;
+    line-height: 35px;
+}
+input[value="HIRE ME"]{
+    border-radius: 31px;
+    border: none;
+    height: 55px;
+    width: 205px;
+    color: #3695ff;
+    font-weight: 700;
+    font-size: 16px;
+}
+/*** HEADER  START ***/
+h1 {
+    font-weight: 900;
+    font-size: 45px;
+    width: 800px;
+    margin: 50px auto 0;
+}
+header {
+    text-transform: uppercase;
+}
+header p {
+    font-weight: 300;
+    width: 800px;
+    margin: 32px auto 0;
+    /*font-size: 17px;*/
+    /*line-height: 35px;*/
 }
 
-header, footer{
-    color: aliceblue;
+header div.wrap {
+    padding-top: 84px;
+    padding-bottom: 20px;
+}
+header input{
+    /*border-radius: 31px;*/
+    /*border: none;*/
+    /*height: 55px;*/
+    /*width: 205px;*/
+    /*color: #3695ff;*/
+    /*font-weight: 700;*/
+    /*!*font-size: 16px;*!   mooved*/
+    margin-top: 75px;
+}
+
+
+header, footer {
+    color: white;
     background: url(../img/bg.jpg) no-repeat 100% 100%;
 }
-.wrapper {
-    width: 2000px;
+
+.menuButton {
+    float: right;
+    cursor: pointer;
+}
+
+[href="#expertIn"] {
+    display: block;
+    margin: 90px auto 0;
+    width: 32px;
+}
+[alt="circle"]{
+    margin: 65px 0 0 24px;
+}
+
+/*****/
+
+/*POP UPS    START*/
+.tulle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .7;
+    background-color: #000;
+    z-index: 2;
+}
+
+#popups {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: calc((100% - 2000px) / 2);
+    right: calc((100% - 2000px) / 2);
+    z-index: 1;
 }
 
 #cookie {
     color: #ffffff;
+    position: relative;
     background: #194277;
-    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+#cookie input{
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    width: 111px;
+    color: #194277;
+    font-weight: 700;
+}
+
+#menu {
+    background: white;
+    position: relative;
+    z-index: 100;
+}
+
+#hireMe {
+    z-index: 10;
+}
+
+/*POP UPS END*/
+
+/*FRAMES START*/
+.wrapper {
     width: 100%;
-    /*! height: 72px; */
-}
-
-#menu{
-    text-align: center;
-}
-
-.inline{
-    display: inline;
 }
 
 .wrapper > * {
-    margin: 0;
-    display: inline-block;
+    margin: 0 auto;
     width: 100%;
+    max-width: 2000px;
 }
-.wrapper > section:nth-of-type(odd){
-    background-color: white;
 
+.wrap {
+    width: 1140px; /* 1170 px - (padding 15px *2) */
+    padding: 0 15px;
+    margin: 0 auto;
+    display: inline-block;
 }
-.wrapper > section:nth-of-type(even){
+
+/*FRAMES END*/
+.wrapper > section p{
+    color: #5a5a5a;
+}
+.wrapper > section:nth-of-type(odd) {
+    background-color: white;
+}
+
+.wrapper > section:nth-of-type(even) {
     background-color: #f1f8ff;
 }
 
-.wrap{
-    width: 1170px;
-    margin: 0 auto;
+/********ABOUT ME*********/
+#aboutMe .wrap{
+    padding: 100px auto;
+}
+#aboutMe p{
+    margin-top: 60px;
+}
+/********ABOUT ME*********/
+section .wrap{
+    padding: 100px 15px;
 }
 
-.tulle{
-    position: fixed;
-    opacity: .7;
+/***********Expert IN**************/
+
+
+#expertIn section{
+    width: 350px;
+    float: left;
+    padding: 15px;
+}
+#expertIn section>div{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border: 1px solid #b7c0c9;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+#expertIn h2{
+    margin-bottom: 100px;
+}
+#expertIn img{
+    margin: auto;
+    position: absolute;
     top: 0;
-    right: 0;
     left: 0;
     bottom: 0;
-    background-color: #000;
-}
-.popup{
+    right: 0;
 
-    background-color: white;
-    border-radius: 5px;
-    position: fixed;
+}
+/***********Expert IN**************/
+
+/*************clients**************/
+#clients h2{
+    margin-bottom: 30px;
+}
+#clients .wrap div{
+    text-align: justify;
+}
+#clients a{
+    display: inline-block;
+    filter: grayscale(1) opacity(0.3);
+    position: relative;
+    margin: 0 47px;
+}
+#clients a:hover{
+    filter: none;
+}
+#clients img{
     margin: 0 auto;
-    padding: 5px;
-    top: 50px;
+}
+/*************clients**************/
+
+#latestWorks section{
+    position: relative;
+    width: 360px;
+    height: 270px;
+    border-radius: 6px;
+    background: #f4f4f4;
+    float: left;
+    margin: 25px 10px;
+    cursor: pointer;
+}
+#latestWorks img{
+    position: absolute;
+    margin: auto auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+footer{
+    height: 240px;
+}
+footer .wrap{
+    padding: 85px 0;
+    font-weight: 300;
+    font-size: 50px;
+}
+footer .wrap strong{
+    font-weight: 700;
 }

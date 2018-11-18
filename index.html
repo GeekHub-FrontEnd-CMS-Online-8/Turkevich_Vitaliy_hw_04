@@ -3,47 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Turkevich_Vitaliy_hw_04</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="./js/main.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <!-- overflow bar -->
-    <div id="cookie"><p>This site uses cookies, so that my service can work better. <input type="submit" value="Accept"
-                                                                                           onclick="hide(this)"></p>
-    </div>
-
-    <!-- Popups -->
-    <div id="menu" style="display: none;">
-        <div class="tulle" onclick="hide(this)"></div>
-        <div class="popup">
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">My Works</a></li>
-                <li><a href="#">Clients</a></li>
-            </ul>
-            <tr>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div class="language"><img src="" alt=""></div>
+    <div id="popups"><!-- overflow bar -->
+        <div id="cookie">
+            <div class="wrap"><p>This site uses cookies, so that my service can work better. <input type="submit"
+                                                                                                    value="Accept"
+                                                                                                    onclick="hide(this)">
+            </p></div>
         </div>
-    </div>
 
-    <!-- Popups -->
+        <!-- Popups -->
+        <div id="menu" style="display: none;">
+            <div class="tulle" onclick="hide(this)"></div>
+            <div class="popup">
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">My Works</a></li>
+                    <li><a href="#">Clients</a></li>
+                </ul>
+                <div>
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </div>
+                <div class="language"><img src="#" alt="#"></div>
+            </div>
+        </div>
+
+        <!-- Popups --></div>
     <header>
         <div class="wrap">
-            <img class="menuButton" src="img/menu.png" alt="menu" onclick="popUps('menu')">
+            <div><img class="menuButton" src="img/menu.png" alt="menu" onclick="popUps('menu')"></div>
             <img src="img/circle.png" alt="circle">
             <h1>free portfolio psd template for graphic designers</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-            <input type="submit" value="hire me">
+                magna aliqua. Ut enim ad minim veniam, quis nostrud</p> <!--  exercitation ullamco -->
+            <input type="submit" value="HIRE ME">
             <a href="#expertIn"><img src="img/arrow.png" alt="arrow"></a>
         </div>
     </header>
@@ -114,23 +116,31 @@
     <section id="latestWorks">
         <div class="wrap">
             <h2>Latest Works</h2>
-            <div><img src="img/pic1.png" alt="pic1"></div>
-            <div><img src="img/pic2.png" alt="pic2"></div>
-            <div><img src="img/pic3.png" alt="pic3"></div>
-            <div><img src="img/pic4.png" alt="pic4"></div>
-            <div><img src="img/pic5.png" alt="pic5"></div>
-            <div><img src="img/pic6.png" alt="pic6"></div>
+            <section><img src="img/pic1.png" alt="pic1"></section>
+            <section><img src="img/pic2.png" alt="pic2"></section>
+            <section><img src="img/pic3.png" alt="pic3"></section>
+            <section><img src="img/pic4.png" alt="pic4"></section>
+            <section><img src="img/pic5.png" alt="pic5"></section>
+            <section><img src="img/pic6.png" alt="pic6"></section>
         </div>
     </section>
 
     <!-- Clients -->
     <section id="clients">
-        <div class="wrap"><h2>Clients</h2></div>
+        <div class="wrap">
+            <h2>Clients</h2>
+            <div>
+                <a href="#"><img src="img/MS_logo.png" alt="MS"></a>
+                <a href="#"><img src="img/Samsung_logo.png" alt="Samsung"></a>
+                <a href="#"><img src="img/IBM_logo.png" alt="IBM"></a>
+                <a href="#"><img src="img/Google_logo.png" alt="Google"></a>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="wrap">Need a graphic designer? <strong>Ready to work!</strong> <input type="submit" value="hire me">
+        <div class="wrap">Need a graphic designer? <strong>Ready to work!</strong> <input type="submit" value="HIRE ME">
         </div>
     </footer>
 </div>
