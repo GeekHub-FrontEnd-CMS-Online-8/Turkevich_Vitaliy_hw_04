@@ -55,7 +55,7 @@ header p {
 }
 
 header div.wrap {
-    padding-top: 84px;
+    padding-top: 81px;
     padding-bottom: 20px;
 }
 header input{
@@ -100,7 +100,7 @@ header, footer {
     bottom: 0;
     opacity: .7;
     background-color: #000;
-    z-index: 2;
+    z-index: 5;
 }
 
 #popups {
@@ -126,12 +126,62 @@ header, footer {
     width: 111px;
     color: #194277;
     font-weight: 700;
+    margin-left: 180px;
 }
 
 #menu {
-    background: white;
     position: relative;
-    z-index: 100;
+    z-index: 10;
+    margin-top: 10px;
+}
+#menu .wrap{
+    background: white;
+    border-radius: 10px;
+    color: #d2d2d2;
+    position: relative;
+    padding: 50px 0 70px;
+}
+[alt="cross"]{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#menu li{
+    list-style: none;
+    margin: 20px 0;
+}
+#menu li a{
+    text-decoration: none;
+    font-size: 50px;
+    color: #d2d2d2;
+    font-weight: 300;
+}
+hr{
+    color: #d1d9e4;
+    width: 390px;
+    margin: 65px auto;
+    border: 1px solid;
+}
+#menu li a:hover{
+    color: #3677fd;
+}
+.language{
+    position: absolute;
+    display: inline-flex;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.language span{
+    margin-right: 10px;
+}
+.media a{
+     filter: grayscale(1) opacity(0.3);
+    margin: 0 10px;
+}
+.media a:hover{
+    filter: none;
 }
 
 #hireMe {

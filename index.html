@@ -8,31 +8,34 @@
 </head>
 <body>
 <div class="wrapper">
+    <!--<div class="tulle"></div>-->
     <div id="popups"><!-- overflow bar -->
         <div id="cookie">
-            <div class="wrap"><p>This site uses cookies, so that my service can work better. <input type="submit"
-                                                                                                    value="Accept"
-                                                                                                    onclick="hide(this)">
-            </p></div>
+            <div class="wrap">
+                <p>This site uses cookies, so that my service can work better.
+                    <input type="submit" value="Accept" onclick="hide(this)">
+                </p>
+            </div>
         </div>
 
         <!-- Popups -->
         <div id="menu" style="display: none;">
-            <div class="tulle" onclick="hide(this)"></div>
-            <div class="popup">
+            <div class="wrap">
+                <img src="img/cross.png" alt="cross" onclick="hide(this)">
                 <ul>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">My Works</a></li>
                     <li><a href="#">Clients</a></li>
                 </ul>
-                <div>
-                    <img src="#" alt="">
-                    <img src="#" alt="">
-                    <img src="#" alt="">
-                    <img src="#" alt="">
+                <hr>
+                <div class="media">
+                    <a href="#"><img src="img/fb.png" alt="fb"></a>
+                    <a href="#"><img src="img/t.png" alt="t"></a>
+                    <a href="#"><img src="img/un.png" alt="un"></a>
+                    <a href="#"><img src="img/be.png" alt="be"></a>
                 </div>
-                <div class="language"><img src="#" alt="#"></div>
+                <div class="language"><span>ENG</span><img src="img/flag.png" alt="flag"></div>
             </div>
         </div>
 
