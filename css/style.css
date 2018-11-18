@@ -55,6 +55,7 @@ header p {
 }
 
 header div.wrap {
+    position: relative;
     padding-top: 81px;
     padding-bottom: 20px;
 }
@@ -76,7 +77,8 @@ header, footer {
 }
 
 .menuButton {
-    float: right;
+    position: absolute;
+    right: 20px;
     cursor: pointer;
 }
 
@@ -86,7 +88,7 @@ header, footer {
     width: 32px;
 }
 [alt="circle"]{
-    margin: 65px 0 0 24px;
+    margin: 65px 0 0;
 }
 
 /*****/
@@ -129,12 +131,12 @@ header, footer {
     margin-left: 180px;
 }
 
-#menu {
+#menu, #hireMe {
     position: relative;
     z-index: 10;
     margin-top: 10px;
 }
-#menu .wrap{
+#menu .wrap, #hireMe .wrap{
     background: white;
     border-radius: 10px;
     color: #d2d2d2;
@@ -146,6 +148,9 @@ header, footer {
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+#menu ul{
+    padding: 0;
 }
 #menu li{
     list-style: none;
@@ -184,8 +189,27 @@ hr{
     filter: none;
 }
 
-#hireMe {
-    z-index: 10;
+#hireMe input, #hireMe textarea {
+    display: block;
+    margin: 7px auto;
+    padding: 5px;
+    color: #5a5a5a;
+    width: 517px;
+    border: 1px solid #b7c0c9;
+    border-radius: 8px;
+}
+#hireMe [type="submit"]{
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    height: 43px;
+    width: 200px;
+    margin-top: 45px;
+    border: none;
+    border-radius: 25px;
+    background: -moz-linear-gradient(left, #3695ff, #356efd 50%);;
+    cursor: pointer;
 }
 
 /*POP UPS END*/

@@ -39,16 +39,32 @@
             </div>
         </div>
 
-        <!-- Popups --></div>
+        <div id="hireMe" style="display: none;">
+            <div class="wrap">
+                <img src="img/cross.png" alt="cross" onclick="hide(this)">
+                <h2>Hire Me</h2>
+                <form id="form" action="#" method="GET">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="mail" placeholder="Your E-Mail">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="send message">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- Popups -->
+
+
     <header>
         <div class="wrap">
-            <div><img class="menuButton" src="img/menu.png" alt="menu" onclick="popUps('menu')"></div>
+            <img class="menuButton" src="img/menu.png" alt="menu" onclick="popUps('menu')">
             <img src="img/circle.png" alt="circle">
             <h1>free portfolio psd template for graphic designers</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua. Ut enim ad minim veniam, quis nostrud</p> <!--  exercitation ullamco -->
-            <input type="submit" value="HIRE ME">
+            <input type="submit" value="HIRE ME" onclick="popUps('hireMe')">
             <a href="#expertIn"><img src="img/arrow.png" alt="arrow"></a>
         </div>
     </header>
@@ -143,7 +159,8 @@
 
     <!-- Footer -->
     <footer>
-        <div class="wrap">Need a graphic designer? <strong>Ready to work!</strong> <input type="submit" value="HIRE ME">
+        <div class="wrap">Need a graphic designer? <strong>Ready to work!</strong> <input type="submit" value="HIRE ME"
+                                                                                          onclick="popUps('hireMe')">
         </div>
     </footer>
 </div>
