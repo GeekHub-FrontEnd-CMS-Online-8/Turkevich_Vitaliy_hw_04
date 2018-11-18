@@ -208,7 +208,8 @@ hr{
     margin-top: 45px;
     border: none;
     border-radius: 25px;
-    background: -moz-linear-gradient(left, #3695ff, #356efd 50%);;
+    background: -moz-linear-gradient(left, #3695ff, #356efd 50%);
+    background: -webkit-linear-gradient(left, #3695ff, #356efd 50%);
     cursor: pointer;
 }
 
